@@ -144,7 +144,7 @@ class App extends React.Component {
       item => item.id === productId
     );
     const updatedItem = {
-      ...updatedCart[update]
+      ...updatedCart[updatedItemIndex]
     };
     updatedItem.quantity--;
     if (updatedItem.quantity <= 0) {
